@@ -1,0 +1,216 @@
+@import 'utils';
+
+
+//  GENERAL STYLES  //
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $primary-font;
+    font-size: 1.6rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: $font-large;
+}
+
+h2 {
+    font-size: $font-medium;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: $secondary-font;
+    font-size: $font-small;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: $secondary-font;
+    font-size: $font-small;
+}
+
+p { 
+    font-family: $secondary-font;
+}
+
+ul li {
+    line-height: 2;
+}
+
+button {
+    width: 200px;
+    background: $dark;
+    color: $light;
+    font-family: $secondary-font;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    border: 2px solid $light;
+    box-shadow: 10px 10px 4px rgba(100, 100, 100, 0.498039);
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 80px 0;
+}
+
+// the orange font color used in spans throughout
+.orange {
+    color: $tertiary;
+}
+
+
+//  GENERAL ENDS HERE   //
+
+//  HEADER STYLES   //
+
+header {
+    background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%), url('/src/assets/hero.jpg') fixed no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+
+    h1 {
+        color: $light;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-button {
+        margin-top: 0;
+    }
+}
+
+//  HEADER ENDS HERE    //
+
+//  DEMENTIA SECTION STYLES //
+
+.dementia-facts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $dementia-background;
+    color: $light;
+    flex-wrap: wrap;
+
+    p {
+        text-align: center;
+    }
+}
+
+.dementia-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 33%;
+    font-size: $font-small;
+
+    h3, p {
+        padding: 5px 0;
+    }
+}
+
+.dementia-headline {
+    flex-basis: 100%;
+    margin-top: 50px;
+}
+
+//  DEMENTIA SECTION ENDS HERE  //
+
+//  MEMORY PLAYER SECTION STYLES    //
+
+.memory-player {
+    background: $tertiary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        color: white;
+    }
+}
+
+//  MEMORY PLAYER STYLES END HERE   //
+
+//  'HOW TO APPLY' SECTION STYLES //
+
+.how-to-apply {
+    display: flex;
+    flex-direction: row;
+    background-color: $primary-background;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25); 
+    width: 400px;
+}
+
+.card-header {
+    background-color: $secondary-background;
+    padding: 20px;
+    height: 200px;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+}
+
+.instructions {
+    padding: 25px;
+
+    li {
+        padding: 5px;
+    }
+
+    span.number {
+        font-size: $font-small;
+        font-weight: 700;
+    }
+}
+
