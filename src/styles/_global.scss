@@ -1,4 +1,4 @@
-@import 'utils';
+@import 'typography';
 
 
 //  GENERAL STYLES  //
@@ -10,52 +10,16 @@ html {
 body {
     font-family: $primary-font;
     font-size: 1.6rem;
+    overflow-x: hidden;
 }
 
 ul {
-    list-style: none;
     margin: 0;
     padding: 20px;
 }
 
 a {
     text-decoration: none;
-}
-
-h1, h2, h3, h4, p {
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, h3, h4 {
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 1px;
-    padding-bottom: 20px;
-}
-
-h1 {
-    font-size: $font-large;
-}
-
-h2 {
-    font-size: $font-medium;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-family: $secondary-font;
-    font-size: $font-small;
-    text-transform: uppercase;
-}
-
-h4 {
-    font-family: $secondary-font;
-    font-size: $font-small;
-}
-
-p { 
-    font-family: $secondary-font;
 }
 
 ul li {
@@ -66,7 +30,6 @@ button {
     width: 200px;
     background: $dark;
     color: $light;
-    font-family: $secondary-font;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -78,7 +41,7 @@ button {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 960px;
     padding: 80px 0;
 }
 
@@ -135,6 +98,7 @@ header {
     p {
         text-align: center;
     }
+
 }
 
 .dementia-card {
@@ -142,7 +106,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 1 0 33%;
     font-size: $font-small;
 
     h3, p {
@@ -164,17 +127,22 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 
-    h2 {
-        color: white;
+    h3 {
+        width: 60%;
+    }
+
+    p {
+        font-weight: 700;
     }
 }
 
 //  MEMORY PLAYER STYLES END HERE   //
 
-//  'HOW TO APPLY' SECTION STYLES //
+//  'TAKE THE CHALLENGE' SECTION STYLES //
 
-.how-to-apply {
+.take-the-challenge {
     display: flex;
     flex-direction: row;
     background-color: $primary-background;
@@ -183,15 +151,23 @@ header {
 .card {
     display: flex;
     flex-direction: column;
-    border-radius: 40px 40px 0 0;
-    box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25); 
     width: 400px;
+
+    .challenge-link {
+        color: $tertiary;
+        font-weight: 700;
+    }
 }
 
 .card-header {
     background-color: $secondary-background;
     padding: 20px;
     height: 200px;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .or {
@@ -205,12 +181,37 @@ header {
     padding: 25px;
 
     li {
-        padding: 5px;
+        padding: 10px 0;
+    }
+}
+
+.instructions-button {
+    display: flex;
+    justify-content: center;
+
+}
+
+.button-zero-margin {
+    margin-top: 20px;
+}
+
+//  ICON STYLING    //
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+
+    img {
+        margin: 5px 20px;
     }
 
-    span.number {
-        font-size: $font-small;
-        font-weight: 700;
-    }
+}
+
+//  BUTTON STYLING  //
+
+button:hover {
+    color: $tertiary;
+    transition: 0.2s all ease;
 }
 

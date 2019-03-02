@@ -1,0 +1,53 @@
+// font families
+
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+
+
+// font and background colors
+
+$primary-background: #F2F2F2;
+$secondary-background: #CACACA;
+$tertiary: #F7850A;
+$dark: #000;
+$light: #FFF;
+$dementia-background: #696969;
+
+// font sizes 
+
+$font-large: 4rem;
+$font-medium: 3rem;
+$font-small: 2rem;
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    font-family: $secondary-font;
+}
+
+h1 {
+    font-size: $font-large;
+}
+
+h2 {
+    font-size: $font-medium;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: $font-small;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: $font-small;
+}
+
+

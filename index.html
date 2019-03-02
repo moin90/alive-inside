@@ -7,84 +7,79 @@
     <link rel="stylesheet" href="public/styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Alive Inside Challenge</title>
 </head>
 <body>
     <header>
-        <div class="wrapper header-content">
+        <div class="wrapper header-content" data-aos="fade-down" data-aos-duration="1000">
             <h1>The Alive Inside <span class="orange">Challenge</span></h1>
             <video src="">Video will go here</video>
-            <a href=""><button class="header-button">Learn More</button></a>
+            <a href=""><button class="header-button">Take The Challenge</button></a>
         </div>
     </header>
 
     <section class="dementia-facts">
-        <div class="wrapper dementia-facts">
-            <article class="dementia-card">
+        <div class="dementia-facts wrapper">
+            <article class="dementia-card" data-aos="fade-down" data-aos-duration="1000">
                 <img src="/src/assets/united-states.png" alt="flag of the United States of America">
                 <h3>5.2 Million</h3>
                 <p>people with dementia in America</p>
             </article>
-            <article class="dementia-card">
+            <article class="dementia-card" data-aos="fade-down" data-aos-duration="1000">
                 <img src="/src/assets/worldwide.png" alt="an image of the Earth as a globe">
                 <h3>42 Million</h3>
                 <p>worldwide</p>
             </article>
-            <article class="dementia-card">
-                <img src="/src/assets/music-player.png" alt="An image of a musical note">
-                <h3>Thousands</h3>
-                <p>of music players available</p>
-            </article>
-            <h2 class="dementia-headline"><span class="orange">But only one</span> designed for Dementia...</h2>
         </div>
     </section>
 
     <section class="memory-player">
         <div class="memory-player wrapper">
-            <h2>The Memory Player <i class="fas fa-headphones"></i></h2>
-            <h4>The only high quality, inexpensive, "no-cord" MP3 player that two people can listen to at the same time!</h4>
+            <h2>Why the Alive Inside Challenge? <i class="fas fa-headphones"></i></h2>
             <video src="">Video goes here</video>
             <p>Thanks to the Rolf and Nanette Lewis family, Alive Inside.org is gifting 1,000 FREE Memory Players to elders with
             Dementia!</p>
-            <a href=""><button>How Do I Apply?</button></a>
+            <a href=""><button>Take The Challenge</button></a>
         </div>
     </section>
 
-    <section class="how-to-apply">
-        <div class="how-to-apply wrapper">
-            <article class="card">
+    <section class="take-the-challenge">
+        <div class="take-the-challenge wrapper">
+            <article class="card" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease">
                 <div class="card card-header">
-                    <h3>Post a Request Video on Instagram, Facebook, or Twitter</h3>
+                    <h3>Post a Challenge Video on Social Media, or send to <a href="mailto:info@aliveinside.org">info@aliveinside.org</a></h3>
                     <div class="social-icons">
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-twitter-square"></i>
+                        <img src="/src/assets/instagram.png" alt="The Instagram logo">
+                        <img src="/src/assets/facebook.png" alt="The Facebook logo">
+                        <img src="/src/assets/twitter.png" alt="The Twitter logo">
                     </div>
                 </div>
                 <ul class="instructions">
-                    <li><span class="number">1.</span> Record a video of you singing the First song you loved to sing! (Just the best part)</li>
-                    <li><span class="number">2.</span> If you need a memory player, let us know!</li>
-                    <li><span class="number">3.</span> Post your video on Instagram, Facebook or Twitter</li>
-                    <li><span class="number">4.</span> Use the hashtag #AliveInsideChallenge</li>
-                    <li><span class="number">5.</span> Nominate 3 friends to do the 'Challenge' or <a href="http://aliveinside.org/sponsor">'Sponsor an Elder!"</a></li>
+                    <li>What was the first song you loved to sing as a child? Sing a few bars</li>
+                    <li>Tell us about your loved one with dementia and why they need a Memory Player</li>
+                    <li>Nominate 3 friends to take The Alive Inside Challenge</li>
+                    <li>Post your video on Facebook, Instagram, or Twitter using the hashtag #AliveInsideChallenge</li>
                 </ul>
             </article>
             <div class="or">
                 <h2>Or</h2>
             </div>
-            <article class="card">
-                <div class="card card-header">
-                    <h3>Pay it Forward and Adopt an Elder</h3>
-                    <img src="" alt="An image of an elder smiling while using the Memory Player">
+            <article class="card" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease">
+                <div class="card-header">
+                    <h3>Pay it Forward and Sponsor an Elder</h3>
+                    <img src="/src/assets/elder.png" alt="An image of an elder smiling while using the Memory Player">
                 </div>
                 <ul class="instructions">
-                    <li><span class="number">1.</span> A $50 Pay it Forward Donation changes
+                    <li>A $50 Pay it Forward Donation changes
                     life for an Elder and their family, and gives
                     them a youth volunteer.</li>
-                    <li><span class="number">2.</span> You can also email a written request for
-                    a Memory Player toinfo@aliveinside.com</li>
-                    <li><a href=""><button>Adopt Today</button></a></li>
+                    <li>You can also email a written request for
+                    a Memory Player to <a href="mailto:info@aliveinside.com" class="challenge-link">info@aliveinside.com</a></li>
                 </ul>
+                <div class="instructions-button">
+                    <a href=""><button class="button-zero-margin">Sponsor Today</button></a>
+                </div>
             </article>
         </div>
     </section>
@@ -108,7 +103,10 @@
 </div>
 
 
-
     <script src="public/scripts/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
