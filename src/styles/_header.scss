@@ -1,0 +1,49 @@
+//  HEADER STYLES   //
+
+header {
+    background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%), url('https://assets.nationbuilder.com/aiiveinside/pages/305/attachments/original/1551655336/hero.jpg?1551655336') fixed no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-button {
+        margin-top: 0;
+    }
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    list-style: none;
+    background-color: $tertiary;
+    color: $light;
+    font-weight: 700;
+
+    li {
+        padding: 10px 25px;
+        color: $light;
+    }
+
+    img {
+        width: 150px;
+    }
+}
+
+//  HEADER ENDS HERE    //

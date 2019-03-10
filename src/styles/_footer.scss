@@ -1,0 +1,23 @@
+//   FOOTER STYLES   //
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $font-extra-small;
+    text-align: center;
+    padding: 20px 0;
+
+    a {
+        color: $tertiary;
+        font-weight: 700;
+    }
+
+    .developer-credits {
+        width: 100%;
+        font-size: 1.2rem;
+        border-top: 1px solid $secondary-background;
+        text-align: center;
+        padding-top: 10px;
+    }
+}

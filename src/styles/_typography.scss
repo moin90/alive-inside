@@ -8,7 +8,7 @@ $secondary-font: 'Montserrat', sans-serif;
 
 $primary-background: #F2F2F2;
 $secondary-background: #CACACA;
-$tertiary: #F7850A;
+$tertiary: #f87704;
 $dark: #000;
 $light: #FFF;
 $dementia-background: #696969;
@@ -18,6 +18,9 @@ $dementia-background: #696969;
 $font-large: 4rem;
 $font-medium: 3rem;
 $font-small: 2rem;
+$font-extra-small: 1.4rem;
+
+// heading styles
 
 h1, h2, h3, h4, p {
     margin: 0;
@@ -25,29 +28,29 @@ h1, h2, h3, h4, p {
 }
 
 h1, h2, h3, h4 {
+    display:block;
     font-weight: 700;
     text-align: center;
     letter-spacing: 1px;
     padding-bottom: 20px;
     font-family: $secondary-font;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
 }
 
 h1 {
+    color: $light;
     font-size: $font-large;
+    font-weight: 700;
 }
 
 h2 {
     font-size: $font-medium;
-    text-transform: uppercase;
 }
 
-h3 {
-    font-size: $font-small;
-    text-transform: uppercase;
-}
-
-h4 {
+h3, h4{
     font-size: $font-small;
 }
-
-

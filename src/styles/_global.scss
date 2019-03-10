@@ -1,6 +1,5 @@
 @import 'typography';
 
-
 //  GENERAL STYLES  //
 
 html {
@@ -8,35 +7,39 @@ html {
 }
 
 body {
+    background-color: $primary-background;
     font-family: $primary-font;
     font-size: 1.6rem;
+    line-height: 1.5;
     overflow-x: hidden;
 }
 
 ul {
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
-}
-
-ul li {
-    line-height: 2;
+    color: $light;
 }
 
 button {
-    width: 200px;
+    width: 300px;
+    border: 2px solid $light;
     background: $dark;
     color: $light;
     font-weight: 700;
+    font-size: $font-small;
     text-transform: uppercase;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
     margin-top: 40px;
-    border: 2px solid $light;
     box-shadow: 10px 10px 4px rgba(100, 100, 100, 0.498039);
+}
+
+img {
+    max-width: 100%;
 }
 
 .wrapper {
@@ -45,52 +48,28 @@ button {
     padding: 80px 0;
 }
 
+.wrapper-heading {
+    padding: 80px 0 0 0;
+
+    h2 {
+        font-size: $font-large;
+    }
+}
+
 // the orange font color used in spans throughout
+
 .orange {
     color: $tertiary;
 }
-
-
 //  GENERAL ENDS HERE   //
 
-//  HEADER STYLES   //
 
-header {
-    background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%), url('/src/assets/hero.jpg') fixed no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-
-    h1 {
-        color: $light;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
-
-    .header-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header-button {
-        margin-top: 0;
-    }
-}
-
-//  HEADER ENDS HERE    //
 
 //  DEMENTIA SECTION STYLES //
 
 .dementia-facts {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
     background-color: $dementia-background;
     color: $light;
     flex-wrap: wrap;
@@ -105,8 +84,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: $font-small;
+    width: 50%;
+    padding: 0 10px;
+    line-height: 1.5;
 
     h3, p {
         padding: 5px 0;
@@ -116,6 +98,17 @@ header {
 .dementia-headline {
     flex-basis: 100%;
     margin-top: 50px;
+}
+
+.dementia-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
 
 //  DEMENTIA SECTION ENDS HERE  //
@@ -140,72 +133,153 @@ header {
 
 //  MEMORY PLAYER STYLES END HERE   //
 
+
 //  'TAKE THE CHALLENGE' SECTION STYLES //
 
 .take-the-challenge {
     display: flex;
     flex-direction: row;
-    background-color: $primary-background;
+    flex-wrap: nowrap;
+    padding-bottom: 20px;
+
+    h2 {
+        width: 100%;
+    }
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    border-radius: 40px 40px 40px 40px;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25); 
     width: 400px;
+    border-radius: 40px 40px 40px 40px;
+}
 
-    .challenge-link {
-        color: $tertiary;
-        font-weight: 700;
-    }
+.take-the-challenge-header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    background: $tertiary;
+    color: $light;
+    border-radius: 40px 40px 0 0;
 }
 
 .card-header {
-    background-color: $secondary-background;
+    background-color: $primary-background;
     padding: 20px;
-    height: 200px;
-    border-radius: 40px 40px 0 0;
+    height: 150px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .or {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 25px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 25px;
+    color: $tertiary;
+
+    h2 {
+        text-shadow: 2px 1px 1px $secondary-background;
+    }
 }
 
 .instructions {
-    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 25px 25px 25px;
+    font-size: $font-small;
 
     li {
+        width: 90%;
         padding: 10px 0;
+        color: $tertiary;
+
+        span {
+            color: $dark;
+        }
     }
 }
 
 .instructions-button {
     display: flex;
     justify-content: center;
-
 }
 
 .button-zero-margin {
-    margin-top: 20px;
+    margin: 0 15px 0 0;
+}
+
+.card-elder-photo {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.option-3 {        
+    background-color: $primary-background;
+    color: $tertiary;
+    text-shadow: 2px 1px 1px $secondary-background;
+}
+
+.heading {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px 40px 40px 40px;
+
+    &.hvr-grow {
+        display: block;
+    }
+
+    h2, h4 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .sing-and-sponsor-heading {
+        border-radius: 40px 40px 0 0;
+        background-color: $tertiary;
+        color: $light;
+    }
+
+    .challenge-link {
+        color: $dark;
+        font-weight: 700;
+    }
+
+    h4 {
+        background-color: $primary-background;
+        font-family: $primary-font;
+        color: $dark;
+        border-radius: 0 0 40px 40px;
+        font-weight: 500;
+        font-size: $font-extra-small;
+    }
+
+    span {
+        border-bottom: 4px solid $light;
+    }
 }
 
 //  ICON STYLING    //
 
-
 .social-icons {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
 
     img {
-        margin: 5px 20px;
+        margin: 15px;
     }
-
 }
 
 //  BUTTON STYLING  //
@@ -215,3 +289,13 @@ button:hover {
     transition: 0.2s all ease;
 }
 
+//      CONTEST SUBMISSIONS     //
+
+.contest-submissions {
+    display: flex;
+    flex-direction: column;
+    background-color: $tertiary;
+    color: $light;
+}
+
+@import 'media-queries';
